@@ -6,7 +6,7 @@ std::string toString(EventType type) {
         case EventType::ADD:    return "ADD";
         case EventType::CANCEL: return "CANCEL";
         case EventType::MODIFY: return "MODIFY";
-        case EventType::EXECUTE: return "EXECUTE";
+        case EventType::TRADE: return "TRADE";
         default:                return "UNKNOWN";
     }
 }

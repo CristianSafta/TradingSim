@@ -8,14 +8,14 @@ enum class EventType {
     ADD,
     CANCEL,
     MODIFY,
-    EXECUTE
+    TRADE
 };
 
 std::string toString(EventType type);
 
 
 
-class Event {
+struct Event {
     public:
         EventType type;
         long long timestamp;
