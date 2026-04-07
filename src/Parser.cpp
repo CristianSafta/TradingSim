@@ -1,7 +1,4 @@
 #include "Parser.h"
-#include <optional>
-#include "Event.h"
-#include <vector>
 #include <sstream>
 #include <iostream>
 #include <fstream>
@@ -12,14 +9,14 @@ EventType parseEventType(const std::string& str){
     if(str == "CANCEL") return EventType::CANCEL;
     if(str == "MODIFY") return EventType::MODIFY;
     if(str == "TRADE") return EventType::TRADE;
-    else throw std::invalid_argument("Unknown event type: " + str);
+    throw std::invalid_argument("Unknown event type: " + str);
 }
 
 // Helper function to convert string to Side enum
 Side parseSide(const std::string& str){
     if(str == "BUY") return Side::BUY;
     if(str == "SELL") return Side::SELL;
-    else throw std::invalid_argument("Unknown side: " + str);
+    throw std::invalid_argument("Unknown side: " + str);
 }
 
 std::optional<Event> parseLine(const std::string& line){
