@@ -9,6 +9,7 @@ add_executable(TradingSim
     src/main.cpp
     src/Event.cpp
     src/Order.cpp
+    src/Parser.cpp
 )
 
 target_include_directories(TradingSim PRIVATE include)

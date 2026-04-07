@@ -15,3 +15,11 @@ A C++ market microstructure simulator for studying order-book dynamics, executio
 - [ ] Milestone 2: CSV parser
 - [ ] Milestone 3: order book
 - [ ] Milestone 4: matching engine
+
+## Build and run
+cmake -S . -B build
+cmake --build build
+build\Debug\TradingSim.exe
+
+
+cmake -S . -B build && cmake --build build && build\Debug\TradingSim.exe

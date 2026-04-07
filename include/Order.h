@@ -20,7 +20,7 @@ enum class OrderType {
 
 std::string toString(OrderType type);
 
-class Order {
+struct Order {
     public:
         int orderId;
         Side side;
